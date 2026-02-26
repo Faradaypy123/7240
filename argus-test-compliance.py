@@ -178,7 +178,7 @@ elif mode == "Intelligence Map":
         labels = ["STANDARDS"] + list(is_codes) + list(filtered_df['Test'])
         parents = [""] + ["Root"]*len(is_codes) + list(filtered_df['IS Code'])
         
-        scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#ffffff'}
+        scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#000000'}
         colors = [scheme['Root']]
         for code in is_codes:
             sub = filtered_df[filtered_df['IS Code'] == code]
@@ -207,12 +207,12 @@ elif mode == "Product Portfolio":
                 p_labels = [product["name"]] + list(prod_df['IS Code'].unique()) + list(prod_df['Test'])
                 p_parents = [""] + [product["name"]] * len(prod_df['IS Code'].unique()) + list(prod_df['IS Code'])
                 
-                scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#ffffff'}
+                scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#000000'}
                 p_colors = [scheme['Root']]
                 for code in prod_df['IS Code'].unique():
                     sub = prod_df[prod_df['IS Code'] == code]
                     score = len(sub[sub['Status'] == 'Feasible']) / len(sub)
-                    p_colors.append('#1a1a4d' if score > 0.8 else '#333333' if score > 0.4 else '#4d4d4d')
+                    p_colors.append('#1a1a4d' if score > 0.8 else '#4d4d4d' if score > 0.4 else '#333333')
                 for status in prod_df['Status']: p_colors.append(scheme.get(status, '#808080'))
                 
                 p_fig = go.Figure(go.Sunburst(ids=p_ids, labels=p_labels, parents=p_parents, marker=dict(colors=p_colors, line=dict(color='#ffffff', width=1)), branchvalues="total"))
@@ -227,4 +227,5 @@ elif mode == "Product Portfolio":
             else:
                 st.info("No data found for this product.")
             st.markdown("</div>", unsafe_allow_html=True)
+
 
