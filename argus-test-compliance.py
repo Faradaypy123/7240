@@ -178,7 +178,7 @@ elif mode == "Intelligence Map":
         labels = ["STANDARDS"] + list(is_codes) + list(filtered_df['Test'])
         parents = [""] + ["Root"]*len(is_codes) + list(filtered_df['IS Code'])
         
-        scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#000000'}
+        scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#ffffff'}
         colors = [scheme['Root']]
         for code in is_codes:
             sub = filtered_df[filtered_df['IS Code'] == code]
@@ -207,7 +207,7 @@ elif mode == "Product Portfolio":
                 p_labels = [product["name"]] + list(prod_df['IS Code'].unique()) + list(prod_df['Test'])
                 p_parents = [""] + [product["name"]] * len(prod_df['IS Code'].unique()) + list(prod_df['IS Code'])
                 
-                scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#000000'}
+                scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#ffffff'}
                 p_colors = [scheme['Root']]
                 for code in prod_df['IS Code'].unique():
                     sub = prod_df[prod_df['IS Code'] == code]
@@ -227,3 +227,4 @@ elif mode == "Product Portfolio":
             else:
                 st.info("No data found for this product.")
             st.markdown("</div>", unsafe_allow_html=True)
+
