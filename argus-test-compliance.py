@@ -223,10 +223,11 @@ elif mode == "Product Portfolio":
                 p_fig.update_layout(
                     height=450, 
                     margin=dict(t=0, l=0, r=0, b=0), 
-                    font=dict(color="#ffffff"), 
+                    font=dict(color="#000000"), 
                     annotations=[dict(text='', x=0.5, y=0.5, showarrow=False, font_size=30)]
                 )
                 st.plotly_chart(p_fig, use_container_width=True, key=f"prod_{i}")
             else:
                 st.info("No data found for this product.")
             st.markdown("</div>", unsafe_allow_html=True)
+
