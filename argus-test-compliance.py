@@ -183,7 +183,7 @@ elif mode == "Intelligence Map":
         for code in is_codes:
             sub = filtered_df[filtered_df['IS Code'] == code]
             score = len(sub[sub['Status'] == 'Feasible']) / len(sub) if len(sub) > 0 else 0
-            colors.append('#1a1a4d' if score > 0.8 else '#333333' if score > 0.4 else '#4d4d4d')
+            colors.append('#1a1a4d' if score > 0.8 else '#4d4d4d' if score > 0.4 else '#333333')
         for status in filtered_df['Status']: colors.append(scheme.get(status, '#808080'))
         
         fig = go.Figure(go.Sunburst(ids=ids, labels=labels, parents=parents, marker=dict(colors=colors, line=dict(color='#ffffff', width=2)), branchvalues="total", insidetextorientation='radial'))
@@ -227,5 +227,6 @@ elif mode == "Product Portfolio":
             else:
                 st.info("No data found for this product.")
             st.markdown("</div>", unsafe_allow_html=True)
+
 
 
