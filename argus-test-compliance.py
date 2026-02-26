@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 import io
 
 # --- SYSTEM CONFIG (Hardcoded Paths Maintained) ---
-DB_PATH = 'c:/Users/lenovo/Downloads/Complete_Ordered_ISO7240_Test_List (1).csv'
+DB_PATH = 'Complete_Ordered_ISO7240_Test_List (1).csv'
 
 st.set_page_config(page_title="StandardOS | Elite Production", layout="wide")
 
@@ -226,3 +226,4 @@ elif mode == "Product Portfolio":
             else:
                 st.info("No data found for this product.")
             st.markdown("</div>", unsafe_allow_html=True)
+
