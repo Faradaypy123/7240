@@ -177,17 +177,20 @@ elif mode == "Intelligence Map":
         ids = ["Root"] + list(is_codes) + list(filtered_df['IS Code'] + " - " + filtered_df['Test'])
         labels = ["STANDARDS"] + list(is_codes) + list(filtered_df['Test'])
         parents = [""] + ["Root"]*len(is_codes) + list(filtered_df['IS Code'])
-        scheme = {'Feasible': '#22c55e', 'Unfeasible': '#ef4444', 'Awaited': '#eab308', 'Root': '#ffffff'}
+        
+        # CORPORATE SCHEME: Navy Blue for Available, Grey for Unavailable/Awaited
+        scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#000000'}
         colors = [scheme['Root']]
         for code in is_codes:
             sub = filtered_df[filtered_df['IS Code'] == code]
             score = len(sub[sub['Status'] == 'Feasible']) / len(sub) if len(sub) > 0 else 0
-            colors.append('#dcfce7' if score > 0.8 else '#fef9c3' if score > 0.4 else '#fee2e2')
-        for status in filtered_df['Status']: colors.append(scheme.get(status, '#f1f5f9'))
+            # Subtle rings based on compliance score
+            colors.append('#1a1a4d' if score > 0.8 else '#333333' if score > 0.4 else '#4d4d4d')
+        for status in filtered_df['Status']: colors.append(scheme.get(status, '#808080'))
         
         fig = go.Figure(go.Sunburst(ids=ids, labels=labels, parents=parents, marker=dict(colors=colors, line=dict(color='#ffffff', width=2)), branchvalues="total", insidetextorientation='radial'))
-        # Set text color to Black/Dark Slate for the main Intelligence Map
-        fig.update_layout(height=850, margin=dict(t=10, l=10, r=10, b=10), paper_bgcolor='white', font=dict(size=14, color="#1e293b"))
+        # FORCE WHITE TEXT COLOR FOR LABELS
+        fig.update_layout(height=850, margin=dict(t=10, l=10, r=10, b=10), paper_bgcolor='white', font=dict(size=14, color="#ffffff"))
         st.plotly_chart(fig, use_container_width=True)
 
 # --- MODULE 3: PRODUCT PORTFOLIO ---
@@ -206,24 +209,24 @@ elif mode == "Product Portfolio":
                 p_labels = [product["name"]] + list(prod_df['IS Code'].unique()) + list(prod_df['Test'])
                 p_parents = [""] + [product["name"]] * len(prod_df['IS Code'].unique()) + list(prod_df['IS Code'])
                 
-                scheme = {'Feasible': '#22c55e', 'Unfeasible': '#ef4444', 'Awaited': '#eab308', 'Root': '#ffffff'}
+                # CORPORATE SCHEME: Navy Blue for Available, Grey for Unavailable/Awaited
+                scheme = {'Feasible': '#000080', 'Unfeasible': '#808080', 'Awaited': '#808080', 'Root': '#000000'}
                 p_colors = [scheme['Root']]
                 for code in prod_df['IS Code'].unique():
                     sub = prod_df[prod_df['IS Code'] == code]
                     score = len(sub[sub['Status'] == 'Feasible']) / len(sub)
-                    p_colors.append('#dcfce7' if score > 0.8 else '#fef9c3' if score > 0.4 else '#fee2e2')
-                for status in prod_df['Status']: p_colors.append(scheme.get(status, '#f1f5f9'))
+                    p_colors.append('#1a1a4d' if score > 0.8 else '#333333' if score > 0.4 else '#4d4d4d')
+                for status in prod_df['Status']: p_colors.append(scheme.get(status, '#808080'))
                 
                 p_fig = go.Figure(go.Sunburst(ids=p_ids, labels=p_labels, parents=p_parents, marker=dict(colors=p_colors, line=dict(color='#ffffff', width=1)), branchvalues="total"))
-                # FORCE BLACK TEXT COLOR FOR LABELS
+                # FORCE WHITE TEXT COLOR FOR LABELS
                 p_fig.update_layout(
                     height=450, 
                     margin=dict(t=0, l=0, r=0, b=0), 
-                    font=dict(color="#ffffff"), # Visible text
+                    font=dict(color="#ffffff"), 
                     annotations=[dict(text='', x=0.5, y=0.5, showarrow=False, font_size=30)]
                 )
                 st.plotly_chart(p_fig, use_container_width=True, key=f"prod_{i}")
             else:
                 st.info("No data found for this product.")
             st.markdown("</div>", unsafe_allow_html=True)
-
