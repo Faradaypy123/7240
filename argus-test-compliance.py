@@ -30,7 +30,7 @@ st.markdown("""
         border: 1px solid #f1f5f9;
         border-radius: 15px;
         padding: 15px;
-        background: #000000;
+        background: #1e3765;
         margin-bottom: 20px;
         box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
     }
@@ -227,6 +227,7 @@ elif mode == "Product Portfolio":
             else:
                 st.info("No data found for this product.")
             st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
