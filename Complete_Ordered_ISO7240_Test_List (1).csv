@@ -1,0 +1,229 @@
+Standard Number,Test Name,Status
+2,Cold,available
+2,"Damp heat, steady state",available
+2,Impact,available
+2,Fire Alarm Condition,available
+2,Electromagnetic compatibility (EMC) immunity test,available
+2,Supply voltage variations,available
+2,"Damp heat, steady state",available
+2,"Vibration, sinusoidal",available
+2,Disabled Condition,unavailable
+2,Fault warning condition,unavailable
+3,Reproducibility,unavailable
+3,Operational performance,unavailable
+3,Durability,unavailable
+3,Dry heat (operational),available
+3,Dry heat (endurance),available
+3,Cold (operational),available
+3,"Damp heat, cyclic (operational)",available
+3,"Damp heat, steady state (endurance)",available
+3,"Damp heat, cyclic (endurance)",available
+3,SO2 corrosion (endurance),unavailable
+3,Shock (operational),available
+3,Impact (operational),available
+3,"Vibration, sinusoidal (operational)",available
+3,"Vibration, sinusoidal (endurance)",available
+3,"Electromagnetic compatibility (EMC), immunity (operational)",unavailable
+3,Electrostatic discharge,unavailable
+3,Radiated electromagnetic fields,unavailable
+3,Conducted disturbance induced by electromagnetic fields,unavailable
+3,Fast transient bursts,unavailable
+3,Slow high-energy voltage surges,unavailable
+3,Enclosure protection,unavailable
+3,"Operational performance, additional test for a.a.d.s with voice",unavailable
+3,Sequence timing for a.a.d.s with voice,unavailable
+3,Synchronization (optional),unavailable
+4,Full Functional Test,unavailable
+4,Reduced functional test,unavailable
+4,Test of the charger and the standby power source,unavailable
+4,Cold,available
+4,"Vibration, sinusoidal",available
+4,"Damp heat, steady state",available
+4,Impact,available
+4,Electromagnetic compatibility (EMC) immunity tests,available
+5,Directional dependence,unavailable
+5,Static response temperature,unavailable
+5,Response times from typical application temperature,unavailable
+5,Response times from 25 °C,unavailable
+5,Response times from high ambient temperature,unavailable
+5,Variation in supply parameters,unavailable
+5,Reproducibility (response times before environmental tests),unavailable
+5,Cold (operational),available
+5,Dry heat (endurance),available
+5,"Damp heat, cyclic (operational)",available
+5,"Damp heat, steady-state (endurance)",available
+5,Sulfur dioxide SO2 corrosion (endurance),unavailable
+5,Shock (operational),available
+5,Impact (operational),available
+5,"Vibration, sinusoidal (operational)",available
+5,"Vibration, sinusoidal (endurance)",available
+5,Electrostatic discharge (operational),available
+5,Radiated electromagnetic fields (operational),available
+5,Conducted disturbances induced by electromagnetic fields (operational),available
+5,Fast transient burst (operational),available
+5,Slow high-energy voltage surge (operational),available
+5,Additional test for suffix R detectors,unavailable
+5,Additional test for suffix S detectors,unavailable
+7,Repeatability,unavailable
+7,Directional dependence,unavailable
+7,Reproducibility,unavailable
+7,Variation of supply parameters,unavailable
+7,Air movement,unavailable
+7,Dazzlinga,unavailable
+7,Dry heat (operational),available
+7,Cold (operational),available
+7,"Damp heat, steady state (operational)",available
+7,"Damp heat, steady state (endurance)",available
+7,Sulfur dioxide (SO2) corrosion (endurance),unavailable
+7,Shock (operational),available
+7,Impact (operational),available
+7,"Vibration, sinusoidal (operational)",available
+7,"Vibration, sinusoidal (endurance)",available
+7,Electrostatic discharge (operational),available
+7,Radiated electromagnetic fields (operational),available
+7,Conducted disturbances induced by electromagnetic fields (operational),available
+7,Fast transient bursts (operational),available
+7,Slow high-energy voltage surge (operational),available
+7,Fire sensitivity,unavailable
+11,Operational Performance,unavailable
+11,Function Test,unavailable
+11,Test Facility test,unavailable
+11,Cold,available
+11,Variation of supply parameters,available
+11,Dry heat (operational),available
+11,Dry heat (endurance),available
+11,Cold (operational),available
+11,RF Testing,available
+11,"Damp heat, steady state (endurance)",available
+11,SO2 corrosion (endurance),unavailable
+11,Shock (operational),available
+11,Impact (operational),unavailable
+11,Vibration (operational),available
+11,Vibration (endurance),available
+11,"Electromagnetic compatibility (operational)a, i.e.",available
+11,a) electrostatic discharge,available
+11,b) radiated electromagnetic fields,available
+11,c) conducted disturbances induced by electromagnetic fields,available
+11,"d) voltage transient, fast transient bursts",available
+11,"e) voltage transient, slow high-energy voltage surge",available
+11,Enclosure protection,unavailable
+11,Exposure to simulated solar radiation (endurance),unavailable
+12,Reproducibility,unavailable
+12,Repeatability,unavailable
+12,Alignment dependence,unavailable
+12,Variation of supply parameters,unavailable
+12,Rapid changes in attenuation,unavailable
+12,Slow changes in attenuation,unavailable
+12,Optical path length dependence,unavailable
+12,Fire sensitivity,unavailable
+12,Stray light,unavailable
+12,Dry heat (operational),available
+12,Cold (operational),available
+12,"Damp heat, steady-state (operational)",available
+12,"Damp heat, steady-state (endurance)",available
+12,Vibration (endurance),available
+12,Electrostatic discharge (operational),available
+12,Radiated electromagnetic fields (operational),available
+12,Conducted disturbances induced by electromagnetic fields (operational),available
+12,Fast transient bursts (operational),available
+12,Slow high-energy voltage surges (operational),available
+12,"Sulfur dioxide, SO2, corrosion (endurance)",unavailable
+12,Impact (operational),available
+15,Repeatability of smoke response,unavailable
+15,Directional dependence of smoke response,unavailable
+15,Directional dependence of heat response,unavailable
+15,Reproducibility of smoke response,unavailable
+15,Reproducibility of heat response,unavailable
+15,Lower limit of heat response,unavailable
+15,Air movement,unavailable
+15,Dazzlinga,unavailable
+15,Variation of supply parameters,unavailable
+15,Dry heat (operational),available
+15,Cold (operational),available
+15,"Damp heat, cyclic (operational)",available
+15,"Damp heat, steady state (endurance)",available
+15,Sulfur dioxide (SO2) corrosion (endurance),unavailable
+15,Shock (operational),available
+15,Impact (operational),available
+15,"Vibration, sinusoidal (operational)",available
+15,"Vibration, sinusoidal (endurance)",available
+15,Electrostatic discharge (operational),available
+15,Radiated electromagnetic fields (operational),available
+15,Conducted disturbances induced by electromagnetic fields (operational),available
+15,Fast transient bursts (operational),available
+15,Slow high energy voltage surge (operational),available
+15,Detectors with more than one smoke sensor – Optional test,unavailable
+15,Fire sensitivity,unavailable
+17,Reproducibility,unavailable
+17,Variation in supply voltage,unavailable
+17,Dry heat (operational),available
+17,Dry heat (endurance),available
+17,Cold (operational),available
+17,"Damp heat, cyclic (operational)",available
+17,"Damp heat, steady state (endurance)",available
+17,"Damp heat, steady state (operational)",available
+17,"Sulfur dioxide, SO2, corrosion (endurance)",unavailable
+17,Shock (operational),available
+17,Impact (operational),available
+17,"Vibration, sinusoidal (operational)",available
+17,"Vibration, sinusoidal (endurance)",available
+17,Enclosure protection (IP test),unavailable
+17,Electrostatic discharge (operational),unavailable
+17,Radiated electromagnetic fields (operational),unavailable
+17,Conducted disturbances induced by electromagnetic fields (operational),unavailable
+17,Fast-transient bursts (operational),unavailable
+17,"Slow, high-energy voltage surge (operational)",unavailable
+18,Performance and variation of supply parameters,available
+18,Dry heat (operational),available
+18,Cold (operational),available
+18,"Damp heat, steady-state (endurance)",available
+18,"Damp heat, cyclic (operational)",available
+18,Sulfur dioxide (SO2) corrosion (endurance),unavailable
+18,Shock (operational),available
+18,Impact (operational),available
+18,"Vibration, sinusoidal (endurance)",available
+18,"Vibration, sinusoidal(operational)",available
+18,"EMC, immunity tests",unavailable
+23,Reproducibility,unavailable
+23,Variation of effective luminous intensity,unavailable
+23,Operational performance,unavailable
+23,Durability,unavailable
+23,Dry heat (operational),available
+23,Dry heat (endurance),available
+23,Cold (operational),available
+23,"Damp heat, cyclic (operational)",available
+23,"Damp heat, steady state (endurance)",available
+23,"Damp heat, cyclic (endurance)",available
+23,Sulphur dioxide (SO2) corrosion (endurance),unavailable
+23,Shock (operational),available
+23,Impact (operational),available
+23,Vibration sinusoidal (operational),available
+23,Vibration sinusoidal (endurance),available
+23,"EMC, Electrostatic discharge (operational)",unavailable
+23,"EMC, Radiated electromagnetic fields (operational)",unavailable
+23,"EMC, Conducted disturbances induced by electromagnetic fields (operational)",unavailable
+23,"EMC, Voltage transients fast transient bursts (operational)",unavailable
+23,"EMC, Voltage transients slow high energy voltage surge (operational)",unavailable
+23,Enclosure protection,unavailable
+23,Flash synchronisation testing (optional function),unavailable
+25,Immunity to site attenuation,unavailable
+25,Alarm signal integrity,unavailable
+25,Identification of components with an r.f. transmission path,unavailable
+25,Reliability (Endurance),unavailable
+25,Receiver performance,unavailable
+25,Mutual disturbance between systems of the same manufacturer,unavailable
+25,Compatibility with other band users,unavailable
+25,Detection of a loss of communication on an r.f. transmission path,unavailable
+25,Verification of service life of power sources,unavailable
+25,Low-power condition fault signal,unavailable
+25,Polarity reversal,unavailable
+25,Repeatability test,unavailable
+25,Reproducibility test,unavailable
+25,Variation of supply parameters,unavailable
+25,Dry heat (operational),available
+25,Dry heat (endurance),available
+25,Cold (operational),available
+25,"Damp heat, cyclic (operational)",available
+25,"Damp heat, steady state",available
+25,"Damp heat, steady state (endurance)",available
+25,SO2 corrosion test (endurance),unavailable
